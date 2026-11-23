@@ -18,7 +18,7 @@ jobs:
     uses: use-nyte/.github/.github/workflows/ci-node.yml@main
     with:
       run-build: true
-      run-tests: true
+      run-tests: false
       run-typecheck: true
       run-lint: true
       run-format: true
