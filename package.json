@@ -11,9 +11,10 @@
     "start": "PORT=52471 react-router-serve ./dist/server/index.mjs",
     "lint": "pnpm exec lint",
     "lint:fix": "pnpm exec lint --fix",
-    "format:check": "pnpm exec format",
-    "format": "pnpm exec format --write",
-    "typecheck": "react-router typegen && tsc --noEmit --incremental false"
+    "format": "pnpm exec format",
+    "format:write": "pnpm exec format --write",
+    "typecheck": "react-router typegen && tsc --noEmit --incremental false",
+    "docs:build": "react-router typegen && typedoc --options typedoc.json"
   },
   "dependencies": {
     "@react-router/node": "7.16.0",
@@ -29,10 +30,11 @@
     "@types/node": "^25.9.1",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
-    "@use-nyte/eslint-config": "2.0.0",
-    "@use-nyte/prettier-config": "2.0.0",
+    "@use-nyte/eslint-config": "^2.0.1",
+    "@use-nyte/prettier-config": "^2.0.1",
     "husky": "^9.1.7",
     "tailwindcss": "^4.3.0",
+    "typedoc": "^0.28.20",
     "typescript": "^6.0.3",
     "vite": "^8.0.14"
   },
