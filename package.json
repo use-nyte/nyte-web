@@ -1,6 +1,6 @@
 {
   "name": "@use-nyte/nyte-web",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Web code for Nyte.",
   "repository": "https://github.com/use-nyte/nyte-web",
   "license": "Apache-2.0",
