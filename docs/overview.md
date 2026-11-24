@@ -1,6 +1,7 @@
 ---
 title: Nyte Web
 sidebar_position: 1
+slug: /
 ---
 
 # Nyte Web
