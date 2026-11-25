@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../node_modules/@use-nyte/ui-web/dist";
 
 @theme {
   --font-sans:

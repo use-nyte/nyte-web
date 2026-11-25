@@ -14,10 +14,13 @@
     "format": "pnpm exec format",
     "format:write": "pnpm exec format --write",
     "typecheck": "tsr generate && tsc --noEmit",
-    "docs:build": "typedoc --options typedoc.json"
+    "docs:build": "typedoc --options typedoc.json",
+    "storybook": "storybook dev",
+    "storybook:build": "storybook build --output-dir .generated/storybook"
   },
   "packageManager": "pnpm@12.18.0",
   "devDependencies": {
+    "@storybook/addon-docs": "^10.6.8",
     "@tailwindcss/vite": "^4.3.0",
     "@tanstack/router-cli": "^1.168.0",
     "@tanstack/router-plugin": "^1.169.0",
@@ -25,6 +28,8 @@
     "@use-nyte/eslint-config": "^2.1.0",
     "@use-nyte/prettier-config": "^2.0.4",
     "husky": "^9.1.7",
+    "storybook": "^10.6.8",
+    "storybook-solidjs-vite": "^10.7.4",
     "tailwindcss": "^4.3.0",
     "typedoc": "^0.28.20",
     "typedoc-docusaurus-theme": "^1.4.3",
