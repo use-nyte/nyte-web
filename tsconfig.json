@@ -1,35 +1,19 @@
 {
   "compilerOptions": {
-    "module": "ES2022",
-    "moduleResolution": "bundler",
-    "resolvePackageJsonExports": true,
-    "types": ["node", "vite/client"],
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
     "target": "ES2022",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDirs": ["./", "./.react-router/types"],
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false,
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "lib": ["DOM", "DOM.Iterable", "ES2022"],
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["node", "vite/client"],
+    "strict": true,
     "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
-    "strict": true
-  }
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src", "vite.config.ts"]
 }

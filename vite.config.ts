@@ -1,13 +1,22 @@
-import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import { defineConfig } from "vite";
+import solid from "vite-plugin-solid";
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter()],
-  resolve: {
-    tsconfigPaths: true
-  },
+  plugins: [
+    tanstackRouter({
+      target: "solid",
+      autoCodeSplitting: true
+    }),
+    solid(),
+    tailwindcss()
+  ],
   server: {
+    port: 52471,
+    strictPort: true
+  },
+  preview: {
     port: 52471,
     strictPort: true
   }
