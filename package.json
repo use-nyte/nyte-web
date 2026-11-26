@@ -14,7 +14,7 @@
     "format": "pnpm exec format",
     "format:write": "pnpm exec format --write",
     "typecheck": "tsr generate && tsc --noEmit",
-    "docs:build": "typedoc --options typedoc.json",
+    "docs:build": "tsr generate && typedoc --options typedoc.json",
     "storybook": "storybook dev",
     "storybook:build": "storybook build --output-dir .generated/storybook",
     "test": "vitest run"

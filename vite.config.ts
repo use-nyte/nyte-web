@@ -14,7 +14,13 @@ export default defineConfig({
   ],
   server: {
     port: 52471,
-    strictPort: true
+    strictPort: true,
+    proxy: {
+      "/health/live": {
+        target: "http://127.0.0.1:52470",
+        changeOrigin: true
+      }
+    }
   },
   preview: {
     port: 52471,
