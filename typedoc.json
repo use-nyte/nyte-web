@@ -6,7 +6,7 @@
   "tsconfig": "tsconfig.json",
   "out": ".generated/api",
   "readme": "none",
-  "exclude": ["**/*.spec.ts", "**/*.test.ts", "**/*.d.ts"],
+  "exclude": ["**/*.{test,spec,d}.{ts,tsx}"],
   "excludePrivate": true,
   "excludeInternal": true,
   "sidebar": {

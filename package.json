@@ -16,10 +16,12 @@
     "typecheck": "tsr generate && tsc --noEmit",
     "docs:build": "typedoc --options typedoc.json",
     "storybook": "storybook dev",
-    "storybook:build": "storybook build --output-dir .generated/storybook"
+    "storybook:build": "storybook build --output-dir .generated/storybook",
+    "test": "vitest run"
   },
   "packageManager": "pnpm@12.18.0",
   "devDependencies": {
+    "@solidjs/testing-library": "^0.8.10",
     "@storybook/addon-docs": "^10.6.8",
     "@tailwindcss/vite": "^4.3.0",
     "@tanstack/router-cli": "^1.168.0",
@@ -28,6 +30,7 @@
     "@use-nyte/eslint-config": "^2.1.0",
     "@use-nyte/prettier-config": "^2.0.4",
     "husky": "^9.1.7",
+    "jsdom": "^31.0.1",
     "storybook": "^10.6.8",
     "storybook-solidjs-vite": "^10.7.4",
     "tailwindcss": "^4.3.0",
@@ -36,7 +39,8 @@
     "typedoc-plugin-markdown": "^4.14.1",
     "typescript": "^6.0.3",
     "vite": "^8.0.14",
-    "vite-plugin-solid": "^2.11.17"
+    "vite-plugin-solid": "^2.11.17",
+    "vitest": "^5.1.1"
   },
   "dependencies": {
     "@tanstack/solid-router": "^1.170.43",
