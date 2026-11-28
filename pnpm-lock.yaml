@@ -201,8 +201,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0(jiti@2.7.0)(prettier@3.10.1)(typescript@6.0.3)
       '@use-nyte/prettier-config':
-        specifier: 2.0.4
-        version: 2.0.4(typescript@6.0.3)
+        specifier: 2.0.5
+        version: 2.0.5(typescript@6.0.3)
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -1435,8 +1435,9 @@ packages:
       '@use-nyte/ui-core': '*'
       '@use-nyte/ui-web': '*'
 
-  '@use-nyte/prettier-config@2.0.4':
-    resolution: {integrity: sha512-eAEP9m8B7VsD3SGIFtFE4Q9I7bVM/v0xoa5T1wTVCSqStTMqXmRwyUSeq0qkXdtiNHxMaBgs/hcoEk0QFO3mjg==, tarball: https://npm.pkg.github.com/download/@use-nyte/prettier-config/2.0.4/9cb1c50ba819a8d7568c5869f33fe32a215202eb}
+  '@use-nyte/prettier-config@2.0.5':
+    resolution: {integrity: sha512-1jSqYaUzsejk4yiCwYDvHhWSZiYTT1DezZxMXU4j9bpaWQER6Q+Tj4ZFf8199dMzyIN40uuB7V8+0mQZ5fSVdg==, tarball: https://npm.pkg.github.com/download/@use-nyte/prettier-config/2.0.5/4034ad5679dad218e1d3e749387a1e34b0e31b47}
+    engines: {node: 26.13.1}
     hasBin: true
 
   '@use-nyte/ui-core@0.0.1':
@@ -1902,6 +1903,10 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
+  ignore@7.0.17:
+    resolution: {integrity: sha512-0c3zcBRlWmcKhcIQWckzkYncJRv5HHB8O32wO/FcWL8DDXWDJgiEF6SX9ThbTv5h/eZ+xJK+VvDjjQ+cQJhp3Q==}
+    engines: {node: '>= 4'}
+
   ignore@7.0.5:
     resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
@@ -2323,8 +2328,8 @@ packages:
       vue-tsc:
         optional: true
 
-  prettier-plugin-tailwindcss@0.8.0:
-    resolution: {integrity: sha512-V8ITGH87yuBDF6JpEZTOVlUz/saAwqb8f3HRgUj8Lh+tGCcrmorhsLpYqzygwFwK0PE2Ib6Mv3M7T/uE2tZV1g==}
+  prettier-plugin-tailwindcss@0.8.1:
+    resolution: {integrity: sha512-iaFMYqDsE4ffdDkn5qup0j5f2aCEBFZrdrZnvu9QKTlWx/iGPeQ4HHu7b7fCPMxeo9nwQBiOAh2nSypdFYWJkw==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -4007,13 +4012,13 @@ snapshots:
       '@use-nyte/ui-core': 0.0.1
       '@use-nyte/ui-web': 0.0.1(solid-js@1.9.20)
 
-  '@use-nyte/prettier-config@2.0.4(typescript@6.0.3)':
+  '@use-nyte/prettier-config@2.0.5(typescript@6.0.3)':
     dependencies:
-      ignore: 5.3.2
+      ignore: 7.0.17
       prettier: 3.10.1
       prettier-plugin-organize-class-members: 1.0.0-beta.6(prettier@3.10.1)
       prettier-plugin-organize-imports: 4.3.0(prettier@3.10.1)(typescript@6.0.3)
-      prettier-plugin-tailwindcss: 0.8.0(prettier-plugin-organize-imports@4.3.0(prettier@3.10.1)(typescript@6.0.3))(prettier@3.10.1)
+      prettier-plugin-tailwindcss: 0.8.1(prettier-plugin-organize-imports@4.3.0(prettier@3.10.1)(typescript@6.0.3))(prettier@3.10.1)
     transitivePeerDependencies:
       - '@babel/preset-env'
       - '@ianvs/prettier-plugin-sort-imports'
@@ -4490,6 +4495,8 @@ snapshots:
 
   ignore@5.3.2: {}
 
+  ignore@7.0.17: {}
+
   ignore@7.0.5: {}
 
   imurmurhash@0.1.4: {}
@@ -4894,7 +4901,7 @@ snapshots:
       prettier: 3.10.1
       typescript: 6.0.3
 
-  prettier-plugin-tailwindcss@0.8.0(prettier-plugin-organize-imports@4.3.0(prettier@3.10.1)(typescript@6.0.3))(prettier@3.10.1):
+  prettier-plugin-tailwindcss@0.8.1(prettier-plugin-organize-imports@4.3.0(prettier@3.10.1)(typescript@6.0.3))(prettier@3.10.1):
     dependencies:
       prettier: 3.10.1
     optionalDependencies:
