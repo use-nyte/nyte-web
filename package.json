@@ -29,7 +29,7 @@
     "@tailwindcss/vite": "4.3.0",
     "@tanstack/router-cli": "1.168.0",
     "@tanstack/router-plugin": "1.169.0",
-    "@types/node": "25.9.1",
+    "@types/node": "25.9.12",
     "@use-nyte/eslint-config": "2.1.0",
     "@use-nyte/prettier-config": "2.0.5",
     "husky": "9.1.7",
